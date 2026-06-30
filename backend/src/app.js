@@ -23,5 +23,11 @@ app.use(express.static("public"));
 // Configure cookie-parser middleware
 app.use(cookieParser());
 
+// Import Routes
+import authRouter from "./routes/auth.routes.js";
+
+// Mount Routes
+app.use("/api/v1/users", authRouter);
+
 // Export the app instance
 export default app;
