@@ -22,3 +22,7 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Uploaded files
+/public/temp/*
+!/public/temp/.gitkeep
