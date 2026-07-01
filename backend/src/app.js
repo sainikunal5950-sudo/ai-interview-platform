@@ -25,9 +25,11 @@ app.use(cookieParser());
 
 // Import Routes
 import authRouter from "./routes/auth.routes.js";
+import resumeRouter from "./routes/resume.routes.js";
 
 // Mount Routes
 app.use("/api/v1/users", authRouter);
+app.use("/api/v1/resume", resumeRouter);
 
 // Export the app instance
 export default app;
